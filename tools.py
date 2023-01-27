@@ -1,5 +1,6 @@
 from setting import *
 import re
+import os 
 
 def removejap(string):
     for one in jap_set:
@@ -21,36 +22,25 @@ def keywordsdrop(string):
     if string in keywordreplace:
         string = keywordreplace[string]
 
-
     return True, string
 
+"""" 读取文件，分割成各个部分 """
 def divide(essaypath):
     with open(essaypath, "r") as f :
-        # content=f.read()
-        # print(content.rstrip())
         temp = f.readlines()
     index = 0
     while temp[index] == "\n":
         index += 1
     title = temp[index].strip()
     index += 1
-    # print("title ", title.strip())
-    # print(temp[index]+ str(index))
     while temp[index] == "\n":
         index += 1
-        # print(temp[index]+ "Ssss")
-
     writeragin = temp[index].strip()
-    # print("writer", writeragin.strip(),index)
     index += 1
-
     while temp[index] == "\n":
         index += 1
     website = temp[index].strip()
-    # print(website.strip(),index) 
     index += 1
-
-
     while temp[index] == "\n":
         index += 1
     description = ""    
@@ -75,9 +65,7 @@ def divide(essaypath):
         # if jap.search(str):
         #     print('Yes')
         keyword = temp[index][1:].strip()
-
         keyword_list = re.split("[/ ,]", keyword)
-
         # keyword_list = keyword.split("",",s")
         for keyword in keyword_list:
             isdrop, waitkeywords = keywordsdrop(keyword)
@@ -92,3 +80,47 @@ def divide(essaypath):
     return title, website, description, keywords, content 
 
 
+def easydivide(essaypath):
+    with open(essaypath, "r") as f :
+        temp = f.readlines()
+    index = 0
+    if temp[index][0] == "第" or  "(":
+        index += 1                                                 
+    while temp[index] == "\n":
+        index += 1
+    title = temp[index].strip()
+    index += 1
+    content = "".join(temp[index:])  
+    return title, content 
+
+def manageadvance(path,production = False):
+    # with open(path, "r") as f :
+    #     temp = f.readlines()
+    # index = 0
+    # if temp[index][0] == "第" or  "(":
+    #     index += 1   
+    # while temp[index] == "\n":
+    #     index += 1
+    # title = temp[index].strip()
+    # index += 1
+    # print(title,index)
+    # content = "".join(temp[index:])  
+    title, content = easydivide(path)
+    audio = re.compile(r'“([^”]*)”')  
+    audiolist, audionamelist = [], []
+    
+    for match in audio.finditer(content): # content为需要查找的内容
+        audiopathabsolute = "/home/vajor/books/static/audio/" + match.group()[1:-1] + ".mp3"
+        audiopath = "../static/audio/" + match.group()[1:-1] + ".mp3"
+        if production:
+            if len(match.group()[1:-1]) > 4:
+                audiolist.append((audiopath, match.group()[1:-1]))
+        else:
+            if os.path.exists(audiopathabsolute):
+                audiolist.append((audiopath, match.group()[1:-1]))
+    content = re.sub(audio, audiore,content)
+    return title,content,audiolist
+
+def audiore(match):
+    audio = match.group()
+    return '<a onclick="playAudio(\'%s\')">'%audio[1:-1] + audio + "</a>"

@@ -12,6 +12,8 @@ from setting import *
 
 app = Flask(__name__)
 
+app.config['CUSTOM_STATIC_PATH'] = "/home/vajor/advance/path"
+
 WIN = sys.platform.startswith('win')
 if WIN:  # 如果是 Windows 系统，使用三个斜线
     prefix = 'sqlite:///'
@@ -97,24 +99,30 @@ def user_page(name):
     return f'User: {escape(name)}'
 
 
-
 @app.route('/books', methods=['GET', 'POST'])
 def books():
     # 获取表单数据
-    essay_id = request.args.get('essay_id')  # 传入表单对应输入字段的 name 值
-    if essay_id:
-        essay_info = id_essay(essay_id)[0]
-        # return redirect(url_for('index'))  # 重定向回主页
+    id = request.args.get('id')  # 传入表单对应输入字段的 name 值
+    if id:
+        essay_info = id_essay(id)[0]
     else:
         essay_info = random_essay("essay")[0]
-        essay_id = essay_info[1]
+        id = essay_info[0]
     essay_address = allessaypath +  essay_info[3]
+    is_advance = essay_info[16]
+    is_advance = 1
+    if is_advance :
+        essay_address = alladvancepath +  essay_info[3]
+        title,text,audiolist = manageadvance(essay_address)
+        essays_list = coadvance(id)
+        return render_template('advancebooks.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
     title, website, description, keywords, text = divide(essay_address)
     # keywords = keywordsstring.split(",")
     mainimg(essay_address)
     # os.copy2(essay_address)
 
     is_series = essay_info[7]
+
     if is_series:
         series_front = essay_info[8]
         series_left = essay_info[9]
@@ -124,10 +132,10 @@ def books():
 
         return render_template('books.html', text = text, title = title, is_series = is_series,\
                 series_front = series_front, series_left = series_left , series_right = series_right,\
-                keywords = keywords, essay_id = essay_id)
+                keywords = keywords, id = id)
     else:
         return render_template('books.html', text = text, title = title, is_series = is_series,\
-                keywords = keywords, essay_id = essay_id)
+                keywords = keywords, id = id)
 
 
 @app.route('/wait', methods=['GET', 'POST'])
@@ -148,13 +156,11 @@ def wait():
     return render_template('wait.html', id = id, title = title, text = text)
 
 
-
 @app.route('/essay/deleted', methods=['GET', 'POST'])
 def delete_essay_():
     essay_id = request.args.get('essay_id') 
     delete_essay(essay_id)
-    essay_info = id_essay(essay_id)[0]
-    return redirect(url_for('books', essay_id = essay_id))
+    return redirect(url_for('books',))
 
 @app.route('/wait/deleted', methods=['GET', 'POST'])
 def delete_wait_():

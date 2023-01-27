@@ -1,0 +1,1262 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.1.3:1234
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+192.168.1.2 - - [22/Jan/2023 02:29:58] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:29:58] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:29:58] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:29:58] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:29:59] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:29:59] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:29:59] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:01] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:07] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:08] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:09] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:10] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:30:11] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /books?essay_id=16547150 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:50] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /books?essay_id=16547150 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 02:36:51] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /books?essay_id=17836472 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:55] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /books?essay_id=17836472 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:11:57] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /books?essay_id=17836472 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:00] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:01] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:02] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:03] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:04] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /essay/deleted?essay_id=17655246 HTTP/1.1" 302 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /books?essay_id=17655246 HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:08] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 08:12:13] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:37] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:49:40] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 14:54:30] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:04] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 15:01:04] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:04] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:08] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:08] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:08] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:08] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:08] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:12] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 15:01:14] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:22:56] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:01] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:16] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 16:23:19] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:33] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:36] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [22/Jan/2023 23:59:39] "GET /static/tags.css HTTP/1.1" 304 -
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+qqqq /home/vajor/essay/37118227｜Sisyphus/异世界行记/#7｜异世界行记｜16444892.
+qqqq /home/vajor/essay/12158524｜茉莉色冰淇淋/｜｜18235686.
+qqqq /home/vajor/essay/39757967｜皓皓皓/｜｜13841335.
+qqqq /home/vajor/essay/7488674｜扑街专员/跑团LOG合集/#13｜跑团LOG合集｜16105326.
+qqqq /home/vajor/essay/7488674｜扑街专员/跑团LOG合集/#14｜跑团LOG合集｜16105335.
+qqqq /home/vajor/essay/31631299｜欢喜天/【代发】 刘的故事：恋童狂魔，目的是让喜欢的幼女们怀孕！/#1｜【代发】 刘的故事：恋童狂魔，目的是让喜欢的幼女们怀孕！｜16584872.
+qqqq /home/vajor/essay/15272183｜朱鹭月麟/｜｜16991359.
+qqqq /home/vajor/essay/31631299｜欢喜天/【代发】 刘的故事：恋童狂魔，目的是让喜欢的幼女们怀孕！/#6｜【代发】 刘的故事：恋童狂魔，目的是让喜欢的幼女们怀孕！｜16584945.
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/setting.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/create_advance.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-566-425
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/vajor/books/app.py", line 9, in <module>
+    from api import *
+  File "/home/vajor/books/api.py", line 4, in <module>
+    from tools import *
+  File "/home/vajor/books/tools.py", line 99
+    if temp[index][0] == "第“ or "(":
+                                  ^
+SyntaxError: unterminated string literal (detected at line 99)
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.1.3:1234
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 802-082-132
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /books HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vajor/.local/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vajor/books/app.py", line 114, in books
+    return render_template('advancebook.html', text = text,title = title)
+UnboundLocalError: local variable 'text' referenced before assignment
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 02:05:50] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 02:05:51] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [26/Jan/2023 02:05:51] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+ * Detected change in '/home/vajor/books/api.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/vajor/books/app.py", line 9, in <module>
+    from api import *
+  File "/home/vajor/books/api.py", line 62
+    def manageadvance()
+                       ^
+SyntaxError: expected ':'
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.1.3:1234
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/js/books.js HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/images/mainimg.jpg HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:04] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:05] "GET /apple-touch-icon-152x152-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [26/Jan/2023 15:37:05] "GET /apple-touch-icon-152x152.png HTTP/1.1" 404 -
+192.168.1.2 - - [26/Jan/2023 15:37:05] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [26/Jan/2023 15:37:05] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+192.168.1.2 - - [26/Jan/2023 15:37:05] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /books?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /books?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /books?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:37:06] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:11] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:39:53] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:25] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:29] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:30] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:41:31] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:51] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:55] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:56] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:57] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:43:59] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:00] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 15:44:01] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 16:05:22] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 22:31:14] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:10] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/谁，谁怕你了！好，来吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/我，我才没有软屁股！也不害怕！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:15:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:12] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:14] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:16] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/那，那当然啦！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/妖精，你不是我对手，快投降吧！我可以….mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/铁妹子，想不到，你怕打棍子！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/不，不许看屁股了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/你这手下败将！谁，谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/谁、谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/我，我——.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/那，那当然啦！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/妖精，你不是我对手，快投降吧！我可以….mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/铁妹子，想不到，你怕打棍子！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/不，不许看屁股了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/你这手下败将！谁，谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/谁、谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:17:17] "GET /static/audio/我，我——.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:26] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/妖精，你不是我对手，快投降吧！我可以….mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/铁妹子，想不到，你怕打棍子！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/那，那当然啦！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/不，不许看屁股了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/你这手下败将！谁，谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/谁、谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/我，我——.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/妖精，你不是我对手，快投降吧！我可以….mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/铁妹子，想不到，你怕打棍子！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/那，那当然啦！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/不，不许看屁股了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/谁、谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/你这手下败将！谁，谁怕了！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:28] "GET /static/audio/我，我——.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:32] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/你想打，便来打吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/我…我才不怕什么打屁股呢！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/打光屁股！？不…不行！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/你想打，便来打吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/我…我才不怕什么打屁股呢！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/打光屁股！？不…不行！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [26/Jan/2023 23:20:33] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/你想打，便来打吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/我…我才不怕什么打屁股呢！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/打光屁股！？不…不行！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/你想打，便来打吧！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/我…我才不怕什么打屁股呢！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:28:09] "GET /static/audio/打光屁股！？不…不行！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:18] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:25] "GET /static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 00:29:26] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:33] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:14:34] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:14:34] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:42:40] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:41] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 02:42:42] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:42:42] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:42:42] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 02:42:42] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 03:21:54] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 03:21:54] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 03:21:54] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 03:21:54] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/js/books.js HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/audio/好，好吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+192.168.1.2 - - [27/Jan/2023 04:39:11] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 04:40:02] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:40:02] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:40:02] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 04:40:02] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /books HTTP/1.1" 200 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/style.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/js/books.js HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/images/mainimg.jpg HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/images/avatar.png HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/tags.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:38] "GET /static/navbar.css HTTP/1.1" 304 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:01:39] "GET /static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:18:54] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:18:54] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:18:54] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 06:18:54] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+ * Detected change in '/home/vajor/books/try.py', reloading
+第 11 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 1 章 1
+audiopath
+../static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3
+audiopath
+../static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3
+audiopath
+../static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3
+第 6 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 1 章 1
+audiopath
+../static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3
+audiopath
+../static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3
+audiopath
+../static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3
+第 11 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 3 章 1
+第 14 章 1
+第 12 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3
+第 1 章 1
+audiopath
+../static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3
+audiopath
+../static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3
+audiopath
+../static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3
+第 6 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 9 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+第 12 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3
+第 8 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/呀！！.mp3
+第 1 章 1
+audiopath
+../static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3
+audiopath
+../static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3
+audiopath
+../static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3
+第 4 章 1
+audiopath
+../static/audio/谁，谁怕你了！好，来吧！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我，我才没有软屁股！也不害怕！.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+第 4 章 1
+audiopath
+../static/audio/谁，谁怕你了！好，来吧！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我，我才没有软屁股！也不害怕！.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+第 14 章 1
+第 14 章 1
+第 14 章 1
+第 7 章 1
+audiopath
+../static/audio/妖精，你不是我对手，快投降吧！我可以….mp3
+audiopath
+../static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/那，那当然啦！.mp3
+audiopath
+../static/audio/铁妹子，想不到，你怕打棍子！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/不，不许看屁股了！.mp3
+audiopath
+../static/audio/你这手下败将！谁，谁怕了！.mp3
+audiopath
+../static/audio/谁、谁怕了！.mp3
+audiopath
+../static/audio/我，我——.mp3
+第 12 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3
+第 7 章 1
+audiopath
+../static/audio/妖精，你不是我对手，快投降吧！我可以….mp3
+audiopath
+../static/audio/铁妹子，我可没有时间陪你玩捉迷藏，快点出来！.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/那，那当然啦！.mp3
+audiopath
+../static/audio/铁妹子，想不到，你怕打棍子！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/不，不许看屁股了！.mp3
+audiopath
+../static/audio/你这手下败将！谁，谁怕了！.mp3
+audiopath
+../static/audio/谁、谁怕了！.mp3
+audiopath
+../static/audio/我，我——.mp3
+第 10 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/呀！！.mp3
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/呀！！.mp3
+第 2 章 1
+audiopath
+../static/audio/我…我才不怕什么打屁股呢！.mp3
+audiopath
+../static/audio/你想打，便来打吧！.mp3
+audiopath
+../static/audio/打光屁股！？不…不行！.mp3
+audiopath
+../static/audio/呀！！.mp3
+第 3 章 1
+第 12 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+audiopath
+../static/audio/我…弱点有…有的，我怕，怕打屁股！！软当儿就在，在我屁股上！.mp3
+第 6 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 3 章 1
+第 11 章 1
+audiopath
+../static/audio/呀！！.mp3
+第 9 章 1
+audiopath
+../static/audio/好，好吧。.mp3
+第 1 章 1
+audiopath
+../static/audio/铁妹子，你的屁股这么圆这么翘，那些粗野的汉子们肯定喜欢从后面狠狠地干你呢•••.mp3
+audiopath
+../static/audio/铁妹子，这第二下，我要打你那挺翘的小屁股，你把屁股撅起来吧。.mp3
+audiopath
+../static/audio/哈哈，铁妹子，你放心，姐姐马上就打烂你的小屁股，然后和他们一起好好疼爱你！哈哈哈~~~.mp3
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/try.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+ * Detected change in '/home/vajor/books/gettextspeech.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 655-311-746
+192.168.1.2 - - [27/Jan/2023 07:04:02] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 07:04:02] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 07:04:02] "GET /static/audio/呀！！.mp3 HTTP/1.1" 206 -
+192.168.1.2 - - [27/Jan/2023 07:04:02] "GET /static/audio/2.mp3 HTTP/1.1" 206 -
+ * Detected change in '/home/vajor/books/tools.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/vajor/books/app.py", line 9, in <module>
+    from api import *
+  File "/home/vajor/books/api.py", line 4, in <module>
+    from tools import *
+  File "/home/vajor/books/tools.py", line 115
+    if len(match.group()[1:-1]) > 4:
+    ^
+IndentationError: expected an indented block after 'if' statement on line 114
