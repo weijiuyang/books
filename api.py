@@ -14,9 +14,10 @@ mycursor = mydb.cursor()
 
 """"  随机挑选一个文章 """
 def random_essay(table):
-    sql = "select * from %s where is_exist = 1 and is_advance = 1 order by rand() limit 1" % (table)
+    sql = "select * from %s where is_exist = 1 order by rand() limit 1" % (table)
     mycursor.execute(sql)
     result = mycursor.fetchall()
+    # print(result)
     return result
 
 """"  根据文章ID去数据库取相关信息 """

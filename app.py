@@ -108,14 +108,11 @@ def books():
     else:
         essay_info = random_essay("essay")[0]
         id = essay_info[0]
-    essay_address = allessaypath +  essay_info[3]
-    is_advance = essay_info[16]
-    is_advance = 1
-    if is_advance :
-        essay_address = alladvancepath +  essay_info[3]
-        title,text,audiolist = manageadvance(essay_address)
-        essays_list = coadvance(id)
-        return render_template('advancebooks.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
+
+    essay_address = publication_path +  essay_info[3]
+    title,text,audiolist = linkaudio(essay_info[3])
+    essays_list = coadvance(id)
+    return render_template('books.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
     title, website, description, keywords, text = divide(essay_address)
     # keywords = keywordsstring.split(",")
     mainimg(essay_address)
@@ -143,14 +140,13 @@ def wait():
     info = random_essay("wait")[0]
     id = info[0]
     title = info[1]
-    wait_address = allwaitpath + str(info[2])
+    wait_address = wait_path + str(info[2])
     try:
         with open(wait_address, "r", encoding="gbk") as f :
             text = f.read()
     except: 
         with open(wait_address, "r") as f :
             text = f.read()
-
 
     print(wait_address)
     return render_template('wait.html', id = id, title = title, text = text)

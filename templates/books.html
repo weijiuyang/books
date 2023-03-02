@@ -11,23 +11,27 @@
 
 <body>
     <div id="navbar">
-        <!-- <a href="#home">Home</a>
-        <a href="#Menu">Menu</a> -->
         <a  href = "{{ url_for('books') }}" rel = "refresh">
             <button class="buttonnav" >&#8635</button>
         </a>
-        <a href = "{{ url_for('delete_essay_', essay_id = essay_id) }}" >
-            <button class="buttonnav" >&#9746</button>
-        </a>
         <a href = "{{ url_for('books') }}" >
             <button class="buttonnav" >pixiv</button>
-        </a>      
-        <!-- <a href="#contact">Contact</a> -->      
+        </a>     
+              <!-- Use any element to open the sidenav -->
+        <a> 
+             <span onclick="openSideNav()">open</span>
+        </a>  
       </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        {% for id, name in essays  %}
+            <a href = "{{ url_for('books', id = id) }}" rel=" essays"> {{ name }}</a>   
+        {% endfor %}
+      </div>
+      
 
     <div class = "marginscreen">
         <h2>
-            <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.png') }}">
             {{ title }}
         </h2> 
         <a  href = "{{ url_for('books') }}" rel = "refresh">
@@ -37,20 +41,17 @@
             <button class="button2" >wait</button>
         </a>
     </div>
-    <!-- The sidebar -->
-    <!-- <div class="sidebar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div> -->
+    {% if audiolist is not none %}
+        {% for audio_path, audio_name in audiolist  %}
+            <audio src="{{ audio_path }}" id="{{ audio_name }}"></audio>   
+        {% endfor %}
+    {% endif %}
     <article white-space:pre-wrap;>
         <img class="mainimg" src="{{ url_for('static', filename='images/mainimg.jpg') }}" alt="main image">
         <pre>
-        {{ text }}
+            {{text | safe}}
         </pre>
     </article>
-    
     <div class = "marginscreen">
         <div class="article-tags">
             {% for keyword in keywords %}
@@ -61,9 +62,7 @@
                 {% endif %}
             {% endfor %}
             </div>
-        
             <hr />
-        
             <a href = "{{ url_for('books') }}" rel="refresh"  >
                 <button class="button1" >&#8635</button>
             </a>
@@ -71,18 +70,20 @@
                 <button class="button1" >&#9746</button>
             </a>
             {% if is_series %}
-                <a href = "{{ url_for('books', essay_id = series_front) }}" rel="first" >
+                <a href = "{{ url_for('books', essay_addresss = series_home) }}" rel="first" >
                     <button class="button1" >&#9817</button>
                 </a>
-                <a href = "{{ url_for('books', essay_id = series_left) }}" rel="prev">
+                <a href = "{{ url_for('books', essay_addresss = series_left) }}" rel="prev">
                     <button class="button1" >&#8592</button>
                 </a>
-                <a href = "{{ url_for('books', essay_id = series_right) }}" rel="next">
+                <a href = "{{ url_for('books', essay_addresss = series_right) }}" rel="next">
                     <button class="button1" >&#8594</button>
                 </a>
             {% endif %}
 
     </div>
+
+
 
 
 

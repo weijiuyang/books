@@ -5,17 +5,19 @@
 @import "tags.css";
 /* @import "overlay.css"; */
 
-/* @font-face {
-    font-family: "Yuanti";
-    src: url("../src/Yuanti.ttf");
+@font-face {
+    font-family: "Yuanti5";
+    font-style: thin;
+    src: url("./font/Yuanti5.ttf");
   }
-   */
+  
 
 
 /* 页面整体 */
 /* for iPhone */
 body {
     background: rgba(235, 232, 177, 0.658);
+    font-family: Yuanti5, PingFangSC-Thin, sans-serif;
 
     margin: auto;
     /* max-width: 580px; */
@@ -34,6 +36,7 @@ body {
         background: rgba(235, 232, 177, 0.658);
         margin: auto;
         font-size: 2rem;
+        font-family: Yuanti5, PingFangSC-Thin, sans-serif;
     }
 }
 
@@ -170,7 +173,7 @@ article {
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-family: PingFangSC-Thin, sans-serif;
+    font-family:  Yuanti5, PingFangSC-Thin, sans-serif;
 
     /* display: table-cell; */
     /* text-align:center; */

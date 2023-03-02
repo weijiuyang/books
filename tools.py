@@ -93,31 +93,19 @@ def easydivide(essaypath):
     content = "".join(temp[index:])  
     return title, content 
 
-def manageadvance(path,production = False):
-    # with open(path, "r") as f :
-    #     temp = f.readlines()
-    # index = 0
-    # if temp[index][0] == "第" or  "(":
-    #     index += 1   
-    # while temp[index] == "\n":
-    #     index += 1
-    # title = temp[index].strip()
-    # index += 1
-    # print(title,index)
-    # content = "".join(temp[index:])  
-    title, content = easydivide(path)
-    audio = re.compile(r'“([^”]*)”')  
-    audiolist, audionamelist = [], []
-    
+def linkaudio(path):
+    allpath = os.path.join(publication_path,path) 
+    title, content = easydivide(allpath)
+    # audio = re.compile(r'“([^”]*)”')  
+    audio = re.compile("\\“(?:(?!\\”).)*(\\,|\\~|\\。|\\！|\\？|(\\……))”");
+    audiolist = []
     for match in audio.finditer(content): # content为需要查找的内容
-        audiopathabsolute = "/home/vajor/books/static/audio/" + match.group()[1:-1] + ".mp3"
-        audiopath = "../static/audio/" + match.group()[1:-1] + ".mp3"
-        if production:
-            if len(match.group()[1:-1]) > 4:
-                audiolist.append((audiopath, match.group()[1:-1]))
-        else:
-            if os.path.exists(audiopathabsolute):
-                audiolist.append((audiopath, match.group()[1:-1]))
+        currentaudio = match.group()[1:-1]
+        if len(currentaudio) > 4:
+            # audiopathabsolute = "/home/vajor/books/static/audio/" + currentaudio + ".mp3"
+            audiopath = "../static/audio/" + path[:-4] + '/' + currentaudio[:80] + ".mp3"
+            print(audiopath)
+            audiolist.append((audiopath, currentaudio))
     content = re.sub(audio, audiore,content)
     return title,content,audiolist
 
