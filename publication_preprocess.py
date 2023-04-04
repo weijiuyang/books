@@ -1,6 +1,7 @@
-from setting import publication_origin_path,publication_path
+from setting import publication_origin_path,publication_path,publication_done_path
 import os
 import re
+import shutil
 # with open(advance_origin_path,"r")as f:
 
 
@@ -29,7 +30,6 @@ def preprocess(series_name=None):
                     line = line.strip('\t')
                     line = line.replace('‘','“')
                     line = line.replace('’','”')
-
 
                     line = line.replace('\'','"')
                     line = line.replace('“','"')
@@ -65,6 +65,8 @@ def preprocess(series_name=None):
                         fw.write("".join(content[indexlist[index]:indexlist[index+1]]))
                         # print("".join(content[indexlist[index]:indexlist[index+1]]))
                         # print("t")
+
+            shutil.move(originpublicationpath, publication_done_path)
 
             
 

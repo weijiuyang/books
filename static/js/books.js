@@ -58,10 +58,16 @@ function closeSideNav() {
 
 
 /* Open */
+var curelementId = null;
 
 function playAudio(name) {
-
+  if (document.getElementById(curelementId)) {
+    document.getElementById(curelementId).pause();
+  }
+  curelementId = name;
+  console.log(curelementId)
   document.getElementById(name).play();
+
 
 }
 

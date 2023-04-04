@@ -25,7 +25,7 @@ def get_conversations(sentence, d):
                     break
             else:
                 flag = False
-                for _ in "！，……。？~":
+                for _ in "！，……。？~～":
                     if sentence[i-1] == _ :
                         flag = True
                 if flag:

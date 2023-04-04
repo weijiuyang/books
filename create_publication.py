@@ -1,5 +1,6 @@
 import os 
 import time
+import shutil
 
 from tools import easydivide
 from setting import *
@@ -18,10 +19,10 @@ start = time.time()
 # def returncontent():
 flag = False
 # print(os.listdir(path))
-author_id = 4
-author_name = "水镜百花美人图"
+author_id = 5
+author_name = "被憎恶的骑士"
 series_home = None
-series_name = '水镜百花美人图'
+series_name = '七彩葫芦妹'
 preprocess(series_name)
 
 writeiddictionray = {}
@@ -92,6 +93,7 @@ for sery in series:
             mycursor.execute(sql)
             continue
     mydb.commit()
+
     # exit()
 # print(writeiddictionray)
 flag = True

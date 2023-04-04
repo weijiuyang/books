@@ -152,22 +152,22 @@ f5 = {
 }
 
 # @retry()
-def makeaudio(series_name,d):
-    for one in os.listdir(publication_path+ "/" + series_name):    
+def makeaudio(kind,series_name,d):
+    for one in os.listdir(kind+ "/" + series_name):    
         print(one)
-        talks = extract_corpus(os.path.join(publication_path+"/" + series_name, one), d)
+        talks = extract_corpus(os.path.join(kind, series_name, one), d)
         # print(talks)
         # pass
         # exit()
-        if not os.path.exists(audio_path + '/' + series_name):
-            os.mkdir(audio_path + '/' + series_name)
+        if not os.path.exists(os.path.join(audio_path, series_name)):
+            os.mkdir(os.path.join(audio_path, series_name))
         for talk in talks:
             speaker = talk["speaker"] if not talk["speaker"] == "" else "金刚妹"
             # print(speaker)
             formdata = d[speaker]
             formdata["text"] = talk["talk"]
             # print(formdata)
-            essay_audio_path = os.path.join(audio_path, series_name + '/'+ one[:-4])
+            essay_audio_path = os.path.join(audio_path, series_name, one[:-4])
             current_audio_path = essay_audio_path + "/%s.mp3"%talk["talk"][:80]
             if not os.path.exists(current_audio_path) and len(talk["talk"]) > 4:
                 # print("ss" ,current_audio_path)
@@ -197,8 +197,21 @@ if __name__ == "__main__":
          "金刚大王":m1,"美女妖":z1,"伸手大王":m1 ,"神秘人":m1,"爷爷":m1,"蝎子精":m1,\
          "小玄":m3, "颜紫绡":f1, "廉锦枫":f2,"卿卿":f1}
     # print(os.listdir(publication_path+"/葫芦道人全集"))
-    series_name = '水镜百花美人图'
-    makeaudio(series_name, d)
+    series_name = '七彩葫芦妹'
+    mycursor = mydb.cursor()
+    sql = "select * from series "
+    mycursor.execute(sql)
+    result = mycursor.fetchall()
+    # print(result)
+    print(result[10])
+    curseries = result[10][0]
+    sql = "select * from essay where series_id= %s" % curseries
+    mycursor.execute(sql)
+    result = mycursor.fetchall()
+    # print(result)
+    print(result)
+    exit()
+    makeaudio(pixiv_path,series_name, d)
 
 
 
