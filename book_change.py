@@ -1,17 +1,24 @@
-from flask import Flask, render_template,request, url_for, redirect, flash
+from flask import Flask, render_template, url_for, redirect, flash,current_app
 import os
 import sys
 import click
 from markupsafe import escape
 from flask_sqlalchemy import SQLAlchemy  # 导入扩展类
 from flask_cors import CORS
-
+import ssl
 
 from booksapi import *
 from bookstool import *
 from setting import *
 
-app = Flask(__name__)
+import asyncio
+from hypercorn.asyncio import serve
+from hypercorn.config import Config
+from quart import Quart,Response,request
+
+
+# app = Flask(__name__)
+app = Quart(__name__)
 
 
 @app.route('/<path:path>')
@@ -23,13 +30,11 @@ def static_file(path):
 def cat():
     return render_template('pwa.html')
 
-@app.route("/test")
-def testa():
-    return "ffff"
+
 
 
 @app.route('/books', methods=['GET', 'POST'])
-def books():
+async def books():
     # 获取表单数据
     id = request.args.get('id')  # 传入表单对应输入字段的 name 值
     if id:
@@ -46,7 +51,6 @@ def books():
 
         return render_template('books.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
 
-
     else:
         essay_address = pixiv_path +  essay_info[3]
 
@@ -61,30 +65,6 @@ def books():
 
         return render_template('books.html', text = text, title = title,series_front = series_front, 
                  essays = essays_list, series_left = series_left , series_right = series_right,\
-                keywords = keywords, id = id)
-
-
-    # title,text,audiolist = linkaudio(essay_address)
-    return render_template('books.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
-    title, website, description, keywords, text = divide(essay_address)
-    # keywords = keywordsstring.split(",")
-    mainimg(essay_address)
-    # os.copy2(essay_address)
-
-    is_series = essay_info[7]
-
-    if is_series:
-        series_front = essay_info[8]
-        series_left = essay_info[9]
-        series_right = essay_info[10]
-        series_name = essay_info[7]
-        author_name = essay_info[14]
-
-        return render_template('books.html', text = text, title = title, is_series = is_series,\
-                series_front = series_front, series_left = series_left , series_right = series_right,\
-                keywords = keywords, id = id)
-    else:
-        return render_template('books.html', text = text, title = title, is_series = is_series,\
                 keywords = keywords, id = id)
 
 
@@ -124,13 +104,31 @@ def save_wait_():
     
     return redirect(url_for('wait'))
 
-# server = pywsgi.WSGIServer(('0.0.0.0', 12345), app)
-# server.serve_forever()
+
+
+@app.route('/')
+def index():
+    with current_app.app_context():
+        return render_template('index.html')
+
+@app.route("/test")
+async def testa():
+    return Response("ffff")
+
+
 if __name__ == "__main__":
-    # CORS(app, supports_credentials=True)
-    app.run(host='0.0.0.0', port='1234', debug=True)
+    # app.run(host="localhost", port=8000, use_http3=True)
+    config = Config()
+    config.bind = ["localhost:1235"]
+    # config.quic_bind = ["localhost:8443"]
 
-
+    # config.alpn_protocols = ["h3"]
+    # ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    # ssl_context.load_cert_chain('/home/vajor/openssl/cert.pem', '/home/vajor/openssl/key.pem',password='vajors123')
+    # config.ssl = ssl_context
+    
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(serve(app, config))
 
 
 

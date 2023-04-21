@@ -35,6 +35,7 @@ m1 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"cheerful",
     "silence":"200ms",
+    "styledegree":"2",
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -49,6 +50,8 @@ m2 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"angry",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -63,6 +66,8 @@ m3 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"angry",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -77,6 +82,8 @@ z1 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"disgruntled",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -91,6 +98,7 @@ f1 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"angry",
     "silence":"200ms",
+    "styledegree":"2",
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -105,6 +113,8 @@ f2 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"angry",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -119,6 +129,8 @@ f3 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"affectionate",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -133,6 +145,8 @@ f4 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"affectionate",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
@@ -148,10 +162,12 @@ f5 = {
     "user_id":"de7a64bb5f5611bb",
     "style":"angry",
     "silence":"200ms",
+    "styledegree":"2",
+
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
-# @retry()
+@retry()
 def makeaudio(kind,series_name,d):
     for one in os.listdir(kind+ "/" + series_name):    
         print(one)
@@ -181,6 +197,8 @@ def makeaudio(kind,series_name,d):
                 #     os.mkdir(essay_character_audio_path)
                 t = json.loads(response.text)
                 # print(t)
+                if not "download" in t:
+                    print(t)
                 downurl = t["download"]
                 audio=requests.get(url=downurl,verify = False)
                 f = open(essay_audio_path + "/%s.mp3"%talk["talk"][:80], 'wb')    
@@ -191,13 +209,15 @@ def makeaudio(kind,series_name,d):
 
 if __name__ == "__main__":
 
-    d = {"葫芦妹":f1,"金刚妹":f1,"三妹":f1,"鳄鱼头领":m1,"蛇精":z1,"小妖":m2,"众妖":m2,"甲七":m2,"蛤蟆头领":m2,\
+    d = {"葫芦妹":f1,"金刚妹":f1,"三妹":f1,"表妹":f1,"鳄鱼头领":m1,"蛇精":z1,"小妖":m2,"众妖":m2,"甲七":m2,"蛤蟆头领":m2,\
          "蝎子大王":m1,"青蛇":z1,"金蛇":z1, "大姐":f3 ,"二姐":f3 ,"四妹":f1, "五妹":f4, "六妹":f1, "七妹":f2,\
          "紫妹" :f2 ,"小蝴蝶":f5,"莲心":f1,\
          "金刚大王":m1,"美女妖":z1,"伸手大王":m1 ,"神秘人":m1,"爷爷":m1,"蝎子精":m1,\
-         "小玄":m3, "颜紫绡":f1, "廉锦枫":f2,"卿卿":f1}
+         "小玄":m3, "颜紫绡":f1, "廉锦枫":f2,"卿卿":f1,
+         "我":m1,"小胖":m2,
+         "克雷雅儿":f1,"墨炎":m1}
     # print(os.listdir(publication_path+"/葫芦道人全集"))
-    series_name = '七彩葫芦妹'
+    series_name = '克雷雅儿'
     mycursor = mydb.cursor()
     sql = "select * from series "
     mycursor.execute(sql)
@@ -210,8 +230,8 @@ if __name__ == "__main__":
     result = mycursor.fetchall()
     # print(result)
     print(result)
-    exit()
-    makeaudio(pixiv_path,series_name, d)
+    # exit()
+    makeaudio(publication_path,series_name, d)
 
 
 

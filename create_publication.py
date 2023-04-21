@@ -2,7 +2,7 @@ import os
 import time
 import shutil
 
-from tools import easydivide
+from bookstool import easydivide
 from setting import *
 from publication_preprocess import preprocess
 import re
@@ -19,18 +19,33 @@ start = time.time()
 # def returncontent():
 flag = False
 # print(os.listdir(path))
-author_id = 5
-author_name = "被憎恶的骑士"
+# author_id = 5
+author_name = "克雷雅儿"
 series_home = None
-series_name = '七彩葫芦妹'
+series_name = '克雷雅儿'
+
+sql = "select id,name from author where name = '%s' " % (author_name)
+mycursor.execute(sql)
+result = mycursor.fetchall()
+if not result or result == []:
+    sql = "insert into author (name) values ('%s')" % (author_name)
+    mycursor.execute(sql)
+    mydb.commit()
+sql = "select id,name from author where name = '%s' " % (author_name)
+mycursor.execute(sql)
+result = mycursor.fetchall()
+print(result[0][0])
+author_id = result[0][0]
+ 
+# exit()
 preprocess(series_name)
+# exit()
 
 writeiddictionray = {}
 series = [_ for _ in os.listdir(publication_path) if _ != ".DS_Store" and _ == series_name ]
 for sery in series:
     # print(writer)
     serypath = os.path.join(publication_path, sery)
-
     sql = "select id,name from series where name = '%s' and author_id = %s" % (sery, author_id)
     mycursor.execute(sql)
     result = mycursor.fetchall()

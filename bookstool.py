@@ -84,6 +84,8 @@ def divide(essaypath):
 def easydivide(essaypath):
     with open(essaypath, "r") as f :
         temp = f.readlines()
+    print(temp)
+    
     index = 0
     if temp[index][0] == "第" or  "(":
         index += 1                                                 
@@ -92,13 +94,14 @@ def easydivide(essaypath):
     title = temp[index].strip()
     index += 1
     content = "".join(temp[index:])  
+    print(str(content))
     return title, content 
 
 def linkaudio(type, path):
     allpath = os.path.join(type,path) 
     title, content = easydivide(allpath)
     # audio = re.compile(r'“([^”]*)”')  
-    audio = re.compile("\\“(?:(?!\\”).)*(\\,|\\~|\\。|\\！|\\？|(\\……))”");
+    audio = re.compile("\\“(?:(?!\\”).)*(\\,|\\~|\\～|\\。|\\！|\\？|(\\……))”")
     audiolist = []
     for match in audio.finditer(content): # content为需要查找的内容
         currentaudio = match.group()[1:-1]

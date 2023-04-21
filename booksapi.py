@@ -23,6 +23,7 @@ def random_essay(table):
 """"  根据文章ID去数据库取相关信息 """
 def id_essay(id):
     sql = "select * from essay where id = %s " % id
+    print(sql)
     mycursor.execute(sql)
     result = mycursor.fetchall()
     return result

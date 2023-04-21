@@ -27,13 +27,24 @@ def preprocess(series_name=None):
                 for index, line in enumerate(content):
                     flag = False
                     line = line.strip(' ')
-                    line = line.strip('\t')
+                    line = line.replace('\t',' ')
                     line = line.replace('‘','“')
                     line = line.replace('’','”')
 
                     line = line.replace('\'','"')
                     line = line.replace('“','"')
                     line = line.replace('”','"')
+                    # print('uuu',line)
+
+                    line = re.sub(r'[\xa0\u3000]+', '\n', line)
+                    print('aaaaa',line)
+                    line = re.sub(r'\s*\n\s*', '\n    ', line)
+                    print('bbbb',line)
+
+                    line = line.strip(' ')
+                    print('ccc',line)
+
+
                     for i in range(len(line)):
                         if line[i] == '"':
                             if not flag:
@@ -43,7 +54,9 @@ def preprocess(series_name=None):
                                 line = line[:i] +  '”' + line[i+1:] 
                                 flag = False
                     print(line[0:4] == '    ')
-                    if line and not line[0] == ' ':
+                    # print('tttt',line)
+                    print(line)
+                    if line and not line == '':
                         content[index] = '    ' + line
                     count += 1
                     # if count == 100 :
@@ -56,7 +69,13 @@ def preprocess(series_name=None):
                     if not result ==  None:
                         print(result.group())
                         indexlist.append(index)
-                indexlist.append(len(content))
+                if indexlist == []:
+                    reg="第 [一二三四五六七八九十]+ 章"
+                    for index, item in enumerate(content):
+                        result = re.search(reg,item)
+                        if not result ==  None:
+                            print(result.group())
+                            indexlist.append(index)                   
                 print(indexlist)
                 print(publicationpath + "/%s第%s章.txt"%(publication[:-4],index))
                 for index in range(len(indexlist)-1):
