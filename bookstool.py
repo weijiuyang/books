@@ -115,4 +115,4 @@ def linkaudio(type, path):
 
 def audiore(match):
     audio = match.group()
-    return '<a onclick="playAudio(\'%s\')">'%audio[1:-1] + audio + "</a>"
+    return '<a onclick="playAudio(\'%s\')" id="text_%s" class="audio_text">'%(audio[1:-1],audio[1:-1]) + audio + "</a>"

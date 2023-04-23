@@ -179,3 +179,38 @@ pre {
     /* text-align:center; */
     vertical-align: middle; 
   }
+
+
+  /* .audio_text {
+    background: linear-gradient(to right, transparent, transparent 50%, rgba(235, 232, 177, 0.658), rgba(235, 232, 177));
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position linear 5s;
+  } */
+
+
+
+.audio_text {
+  /* font-size: 24px; */
+  font-weight: normal;
+  font-family: Yuanti5, sans-serif;
+  color: black;
+  opacity: 0.75;
+  transition:  0.5s ease;
+  transform: scale(1);
+  --webkit-animation-name:breathe; 
+}
+
+
+
+  @-webkit-keyframes breathe {
+    0%,100% {
+      opacity: 0.6;
+    }
+    25%,75% {
+        opacity: 0.8;
+      }
+    50% {
+      opacity: 1;
+    }
+  }

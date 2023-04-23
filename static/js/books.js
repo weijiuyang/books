@@ -58,16 +58,26 @@ function closeSideNav() {
 
 
 /* Open */
-var curelementId = null;
-
+var curaduio = null;
+var curtext = null
 function playAudio(name) {
-  if (document.getElementById(curelementId)) {
-    document.getElementById(curelementId).pause();
+  if (curaduio != null) {
+    curaduio.pause();
+    curtext.style.animation = ``;
+    curtext.offsetHeight; 
   }
-  curelementId = name;
-  console.log(curelementId)
-  document.getElementById(name).play();
 
+  audio = document.getElementById(name);
+  aduiotext = document.getElementById('text_'+name);
+  duration = audio.duration
+  aduiotext.style.animation = `breathe 1s ease-in-out `;
+  console.log(aduiotext.style.animation)
+  aduiotext.style.animationIterationCount = Math.round(duration)
+
+  curaduio = audio
+  curtext = aduiotext;
+  console.log(curaduio)
+  curaduio.play();
 
 }
 
