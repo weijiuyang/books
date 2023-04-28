@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Books</title>
+    <link rel="apple-touch-startup-image" href="{{ url_for('static', filename='images/hlm.png') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Books">
     <link rel="icon" href="/static/images/hlm.png">
@@ -55,7 +56,7 @@
         {% endfor %}
     {% endif %}
     <article white-space:pre-wrap;>
-        <img class="mainimg" src="{{ url_for('static', filename='images/mainimg.jpg') }}" alt="main image">
+        <img class="mainimg" src="{{ url_for('image', filename= mainimg)}}" alt="main image">
         <pre>
             {{text | safe}}
         </pre>

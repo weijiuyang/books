@@ -198,12 +198,10 @@ pre {
   opacity: 0.75;
   transition:  0.5s ease;
   transform: scale(1);
-  --webkit-animation-name:breathe; 
+  /* --webkit-animation-name:breathe;  */
 }
 
-
-
-  @-webkit-keyframes breathe {
+  @keyframes breathe {
     0%,100% {
       opacity: 0.6;
     }

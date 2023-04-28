@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request, url_for, redirect, flash
+from flask import Flask, render_template,request, url_for, redirect, flash,send_file
 import os
 import sys
 import click
@@ -14,9 +14,9 @@ from setting import *
 app = Flask(__name__)
 
 
-@app.route('/<path:path>')
-def static_file(path):
-    return app.send_static_file(path)
+# @app.route('/<path:path>')
+# def static_file(path):
+#     return app.send_static_file(path)
 
 
 @app.route('/cat')
@@ -28,7 +28,7 @@ def testa():
     return "ffff"
 
 
-@app.route('/books', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def books():
     # 获取表单数据
     id = request.args.get('id')  # 传入表单对应输入字段的 name 值
@@ -38,13 +38,16 @@ def books():
         essay_info = random_essay("essay")[0]
         id = essay_info[0]
 
+
     print(essay_info[1])
     if essay_info[1] == "": 
         essay_address = essay_info[3]
         title,text,audiolist = linkaudio(publication_path,essay_address)
+        mainimg = os.path.join(publication_path,essay_address[:-3]+'.jpg')
+
         essays_list = coadvance(id)
 
-        return render_template('books.html', text = text,title = title, essays = essays_list,audiolist = audiolist)
+        return render_template('books.html',mainimg = mainimg, text = text,title = title, essays = essays_list,audiolist = audiolist)
 
 
     else:
@@ -58,8 +61,9 @@ def books():
         author_name = essay_info[14]
         essays_list = coadvance(id)
 
+        mainimg = os.path.join(pixiv_path,essay_info[3][:-3]+'jpg')
 
-        return render_template('books.html', text = text, title = title,series_front = series_front, 
+        return render_template('books.html', mainimg = mainimg, text = text, title = title,series_front = series_front, 
                  essays = essays_list, series_left = series_left , series_right = series_right,\
                 keywords = keywords, id = id)
 
@@ -87,6 +91,10 @@ def books():
         return render_template('books.html', text = text, title = title, is_series = is_series,\
                 keywords = keywords, id = id)
 
+@app.route('/image/<path:filename>')
+def image(filename):
+    print(filename)
+    return send_file(os.path.join('/' + filename), mimetype='image/jpeg')
 
 @app.route('/wait', methods=['GET', 'POST'])
 def wait():
@@ -128,7 +136,9 @@ def save_wait_():
 # server.serve_forever()
 if __name__ == "__main__":
     # CORS(app, supports_credentials=True)
-    app.run(host='0.0.0.0', port='1234', debug=True)
+    # app.run(host='0.0.0.0', port='1234', debug=True)
+    app.run(host='::', port='1234', debug=True)
+
 
 
 

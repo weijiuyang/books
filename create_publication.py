@@ -20,9 +20,9 @@ start = time.time()
 flag = False
 # print(os.listdir(path))
 # author_id = 5
-author_name = "克雷雅儿"
+author_name = "长安忆"
 series_home = None
-series_name = '克雷雅儿'
+series_name = '长安忆'
 
 sql = "select id,name from author where name = '%s' " % (author_name)
 mycursor.execute(sql)
@@ -64,7 +64,8 @@ for sery in series:
     print(serypath)
     # exit()
     essays  = os.listdir(serypath)
-    # print(series)
+    print(series)
+    # exit()
     resortlist = []
     for essay in essays:
         s = [float(s) for s in re.findall(r'-?\d+\.?\d*', essay)]
@@ -84,7 +85,7 @@ for sery in series:
                                 # continue
         print(essaypath)
         title, _ = easydivide(essaypath)
-            # exit()
+        # exit()
         sql = "select * from essay where title = '%s' and author_id = %s" % (title, author_id)
         mycursor.execute(sql)
         result = mycursor.fetchall()

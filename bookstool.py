@@ -28,6 +28,7 @@ def keywordsdrop(string):
 def divide(essaypath):
     with open(essaypath, "r") as f :
         temp = f.readlines()
+        print(temp)
     index = 0
     while temp[index] == "\n":
         index += 1
@@ -85,13 +86,18 @@ def easydivide(essaypath):
     with open(essaypath, "r") as f :
         temp = f.readlines()
     print(temp)
-    
+    exit()
     index = 0
     if temp[index][0] == "第" or  "(":
-        index += 1                                                 
-    while temp[index] == "\n":
-        index += 1
-    title = temp[index].strip()
+        if len(temp[index].split('章')[-1].replace(')','').strip()) > 1 :
+            title = temp[index].split('章')[-1].replace(')','').strip()
+        elif len(temp[index].split('节')[-1].replace(')','').strip()) > 1 :
+            title = temp[index].split('节')[-1].replace(')','').strip()
+        else:
+            index += 1                                                 
+        while temp[index] == "\n":
+            index += 1
+        title = temp[index].strip()
     index += 1
     content = "".join(temp[index:])  
     print(str(content))

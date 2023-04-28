@@ -167,7 +167,7 @@ f5 = {
     "text":"来呀，别的地方你们射不疼我，就射这里吧！！这可是我身上最软的地方了，你们再射不疼我，就别说我没给你们机会了！"
 }
 
-@retry()
+# @retry()
 def makeaudio(kind,series_name,d):
     for one in os.listdir(kind+ "/" + series_name):    
         print(one)
@@ -185,11 +185,47 @@ def makeaudio(kind,series_name,d):
             # print(formdata)
             essay_audio_path = os.path.join(audio_path, series_name, one[:-4])
             current_audio_path = essay_audio_path + "/%s.mp3"%talk["talk"][:80]
-            if not os.path.exists(current_audio_path) and len(talk["talk"]) > 4:
+            if not os.path.exists(current_audio_path) :
                 # print("ss" ,current_audio_path)
                 # print(talk)
                 # exit()
+                # print( talk["talk"])
+                newtalk = talk["talk"]
+                for i in "。？，！ ":
+                    newtalk = newtalk.replace(i,'')
+                    # print('ttt',newtalk)
+
+                if len(newtalk) == 0 :
+                    print(newtalk)
+                    continue
+                # print(newtalk)
                 response = requests.post(html_listen, data=formdata,headers=headers)
+
+                # 打印请求URL
+                print(response.request.url)
+
+                # 打印请求方法
+                print(response.request.method)
+
+                # 打印请求头
+                print(response.request.headers)
+
+                # 打印请求正文
+                print(response.request.body)
+                import urllib.parse
+
+                decoded_str = urllib.parse.unquote(response.request.body)
+                print(decoded_str)
+                # 打印响应状态码
+                print(response.status_code)
+
+                # 打印响应头
+                print(response.headers)
+                # 打印响应正文
+                print(response.text)
+
+                # exit()
+
                 if not os.path.exists(essay_audio_path):
                     os.mkdir(essay_audio_path)
                 # essay_character_audio_path = essay_audio_path + "/" + talk["speaker"]
@@ -199,6 +235,7 @@ def makeaudio(kind,series_name,d):
                 # print(t)
                 if not "download" in t:
                     print(t)
+                    continue
                 downurl = t["download"]
                 audio=requests.get(url=downurl,verify = False)
                 f = open(essay_audio_path + "/%s.mp3"%talk["talk"][:80], 'wb')    
@@ -214,10 +251,13 @@ if __name__ == "__main__":
          "紫妹" :f2 ,"小蝴蝶":f5,"莲心":f1,\
          "金刚大王":m1,"美女妖":z1,"伸手大王":m1 ,"神秘人":m1,"爷爷":m1,"蝎子精":m1,\
          "小玄":m3, "颜紫绡":f1, "廉锦枫":f2,"卿卿":f1,
-         "我":m1,"小胖":m2,
-         "克雷雅儿":f1,"墨炎":m1}
+        #  "我":m1,
+        "小胖":m2,
+         "克雷雅儿":f1,"墨炎":m1,
+         '沁兰':f1,'紫馨':f3,'芷涵':f3,'小婷':f3,'穆雪寒':f1,'吉达':m1,'轩':m2,
+         '林沅':f1,'赵轩':m1,'太后':z1,'陆燕':f4,'紫岚':f2,'李璇':z1}
     # print(os.listdir(publication_path+"/葫芦道人全集"))
-    series_name = '克雷雅儿'
+    series_name = '长安忆'
     mycursor = mydb.cursor()
     sql = "select * from series "
     mycursor.execute(sql)

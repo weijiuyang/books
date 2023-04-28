@@ -2,7 +2,7 @@ import os
 import time
 
 from setting import *
-from tools import divide
+from bookstool import divide
 
 
 '''
